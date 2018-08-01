@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:src="@color/colorAccent"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:text="0.00 KB"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_below="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:src="@color/colorAccent"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_size2"
+        android:text="0.00 KB"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_below="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"/>
+
+    <View
+        android:layout_alignBottom="@id/tv_size"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>
