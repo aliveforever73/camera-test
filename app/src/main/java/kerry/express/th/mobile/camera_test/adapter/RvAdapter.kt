@@ -26,6 +26,7 @@ class RvAdapter(var originList: Array<File>,var compressedList: Array<File>):Rec
         if(originSize>1024) {
             originSize /= 1024.0
             originSizeType = " MB"
+            
         }
         holder.itemView.tv_size.text = String.format("%.1f",originSize) + originSizeType
         Glide.with(holder.itemView.context).load(originList[position].absolutePath)
