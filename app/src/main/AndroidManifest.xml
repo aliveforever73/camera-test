@@ -35,7 +35,7 @@
                 android:resource="@xml/file_path" />
         </provider>
 
-        <activity android:name=".GalleryActivity"></activity>
+        <activity android:name=".GalleryActivity"/>
     </application>
 
 </manifest>
